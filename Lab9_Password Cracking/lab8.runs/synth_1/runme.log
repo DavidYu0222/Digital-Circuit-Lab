@@ -1,0 +1,312 @@
+
+*** Running vivado
+    with args -log lab8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab8.tcl
+
+
+ECHO 已關閉。
+ECHO 已關閉。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source lab8.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 446.703 ; gain = 166.953
+Command: synth_design -top lab8 -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22084
+INFO: [Synth 8-11241] undeclared symbol 'btn_pressed', assumed default net type 'wire' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/lab8.v:77]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1259.918 ; gain = 409.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab8' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/lab8.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/clk_div.v:23]
+	Parameter divider bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div__parameterized0' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/clk_div.v:23]
+	Parameter divider bound to: 40 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div__parameterized0' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/imports/debounce.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/imports/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LCD_module' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/imports/LCD_module.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_module' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/imports/LCD_module.v:13]
+INFO: [Synth 8-6157] synthesizing module 'md5' [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'md5' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/lab8.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'lab8' (0#1) [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/lab8.v:3]
+WARNING: [Synth 8-6014] Unused sequential element w_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:70]
+WARNING: [Synth 8-6014] Unused sequential element A_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:73]
+WARNING: [Synth 8-6014] Unused sequential element B_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:74]
+WARNING: [Synth 8-6014] Unused sequential element C_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:75]
+WARNING: [Synth 8-6014] Unused sequential element D_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:76]
+WARNING: [Synth 8-6014] Unused sequential element D_next_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:82]
+WARNING: [Synth 8-6014] Unused sequential element C_next_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:83]
+WARNING: [Synth 8-6014] Unused sequential element A_next_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:84]
+WARNING: [Synth 8-6014] Unused sequential element B_next_reg was removed.  [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/sources_1/new/md5.v:86]
+WARNING: [Synth 8-3917] design lab8 has port usr_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port usr_btn[2] in module lab8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_btn[1] in module lab8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_btn[0] in module lab8 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1370.617 ; gain = 520.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.617 ; gain = 520.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.617 ; gain = 520.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.407 . Memory (MB): peak = 1370.617 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc]
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sck'. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_ss'. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.srcs/constrs_1/new/lab8.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab8_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab8_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1477.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1477.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'P_reg' in module 'lab8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             S_MAIN_INIT |                             0010 |                               00
+             S_MAIN_CRAC |                             1000 |                               01
+             S_MAIN_CHEC |                             0100 |                               11
+             S_MAIN_SHOW |                             0001 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'P_reg' using encoding 'one-hot' in module 'lab8'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:52 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 207   
+	   3 Input   32 Bit       Adders := 168   
+	   4 Input   32 Bit       Adders := 18    
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 31    
++---XORs : 
+	   2 Input     32 Bit         XORs := 84    
+	   3 Input     32 Bit         XORs := 24    
++---Registers : 
+	              128 Bit    Registers := 5     
+	               64 Bit    Registers := 7     
+	               56 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 23    
+	   8 Input   60 Bit        Muxes := 3     
+	   2 Input   60 Bit        Muxes := 3     
+	   2 Input   56 Bit        Muxes := 6     
+	   2 Input   52 Bit        Muxes := 4     
+	   5 Input   52 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10    
+	  69 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design lab8 has port usr_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab8 has port usr_led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port usr_btn[2] in module lab8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_btn[1] in module lab8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_btn[0] in module lab8 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:51 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:02:03 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:02:11 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:02:26 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:02:26 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:02:28 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:02:29 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:02:29 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:02:29 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |  3184|
+|3     |LUT1   |   376|
+|4     |LUT2   |  6307|
+|5     |LUT3   |   881|
+|6     |LUT4   |  5444|
+|7     |LUT5   |  5189|
+|8     |LUT6   |   809|
+|9     |MUXF7  |    33|
+|10    |MUXF8  |    12|
+|11    |FDRE   |   818|
+|12    |FDSE   |    94|
+|13    |IBUF   |     3|
+|14    |OBUF   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:02:29 . Memory (MB): peak = 1477.254 ; gain = 627.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:02:19 . Memory (MB): peak = 1477.254 ; gain = 520.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:02:29 . Memory (MB): peak = 1477.254 ; gain = 627.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.204 . Memory (MB): peak = 1477.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1477.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 50de9b34
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 28 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:02:47 . Memory (MB): peak = 1477.254 ; gain = 1030.551
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.runs/synth_1/lab8.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab8_utilization_synth.rpt -pb lab8_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 20:34:47 2023...

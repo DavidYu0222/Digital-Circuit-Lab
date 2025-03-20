@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Dec 18 20:34:58 2023
+# Process ID: 19136
+# Current directory: C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.runs/impl_1
+# Command line: vivado.exe -log lab8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab8.tcl -notrace
+# Log file: C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.runs/impl_1/lab8.vdi
+# Journal file: C:/Users/tisne/Desktop/Vivado/Lab9_Password Cracking/lab8.runs/impl_1\vivado.jou
+# Running On: LAPTOP-4TSITKQT, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+source lab8.tcl -notrace

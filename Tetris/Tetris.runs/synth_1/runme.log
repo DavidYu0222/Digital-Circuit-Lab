@@ -1,0 +1,396 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+ECHO 已關閉。
+ECHO 已關閉。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 446.348 ; gain = 165.074
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/utils_1/imports/synth_1/main.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28104
+INFO: [Synth 8-11241] undeclared symbol 'slow_clk', assumed default net type 'wire' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:40]
+INFO: [Synth 8-11241] undeclared symbol 'detect_en', assumed default net type 'wire' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:166]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:316]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1262.930 ; gain = 411.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/clk_div.v:21]
+	Parameter divider bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/clk_div.v:21]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/debounce.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'cur_block' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'cur_block' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:3]
+WARNING: [Synth 8-689] width (3) of port connection 'rot' does not match port width (2) of module 'cur_block' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:105]
+WARNING: [Synth 8-689] width (3) of port connection 'rot' does not match port width (2) of module 'cur_block' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:118]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/display.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/vga_sync.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/vga_sync.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sram' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 76800 - type: integer 
+	Parameter FILE bound to: images.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'images.mem' is read successfully [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter RAM_SIZE bound to: 1530 - type: integer 
+	Parameter FILE bound to: number_table.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'number_table.mem' is read successfully [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/sram.v:8]
+WARNING: [Synth 8-689] width (12) of port connection 'data_i' does not match port width (1) of module 'sram__parameterized0' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/display.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/display.v:5]
+INFO: [Synth 8-6157] synthesizing module 'displayboard' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:3]
+WARNING: [Synth 8-567] referenced signal 'board' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'current' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'blk_1' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'blk_2' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'blk_3' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+WARNING: [Synth 8-567] referenced signal 'blk_4' should be on the sensitivity list [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'displayboard' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayboard.v:3]
+INFO: [Synth 8-6157] synthesizing module 'displayhold' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayhold.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'displayhold' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/displayhold.v:3]
+INFO: [Synth 8-6157] synthesizing module 'detect_complete_row' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/detect_complete_row.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'detect_complete_row' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/detect_complete_row.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/main.v:5]
+WARNING: [Synth 8-3917] design main has port usr_led[3] driven by constant 0
+WARNING: [Synth 8-7129] Port clk in module displayboard is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module sram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_sw[2] in module display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_sw[1] in module display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port usr_sw[0] in module display is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1410.516 ; gain = 558.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1410.516 ; gain = 558.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1410.516 ; gain = 558.730
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1410.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/constrs_1/new/board.xdc]
+Finished Parsing XDC File [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/constrs_1/new/board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/constrs_1/new/board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1480.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1480.512 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1480.512 ; gain = 628.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1480.512 ; gain = 628.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1480.512 ; gain = 628.727
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 0000015B423E2C60
+DSP Debug: swapped A/B pins for adder 0000015B423E40A0
+WARNING: [Synth 8-327] inferring latch for variable 'blk_1_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'blk_2_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'blk_3_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'blk_4_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'width_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'height_reg' [C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.srcs/sources_1/new/cur_block.v:26]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 1480.512 ; gain = 628.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 16    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               23 Bit    Registers := 5     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 18    
+	                1 Bit    Registers := 9     
++---RAMs : 
+	             900K Bit	(76800 X 12 bit)          RAMs := 1     
+	               1K Bit	(1530 X 1 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  600 Bit        Muxes := 5     
+	   4 Input  600 Bit        Muxes := 1     
+	   5 Input  600 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 5     
+	   6 Input   26 Bit        Muxes := 1     
+	   8 Input   23 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 1     
+	   8 Input   12 Bit        Muxes := 6     
+	   2 Input   11 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 20    
+	   2 Input    8 Bit        Muxes := 25    
+	   2 Input    5 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 16    
+	   9 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 46    
+	   8 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design main has port usr_led[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:36 . Memory (MB): peak = 1731.855 ; gain = 880.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_3/display0 | ram1/RAM_reg | 1 K x 1(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_3/display0 | ram0/RAM_reg | 75 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 36     | 
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:02:48 . Memory (MB): peak = 1731.855 ; gain = 880.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:03:06 . Memory (MB): peak = 1731.855 ; gain = 880.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|i_3/display0 | ram1/RAM_reg | 1 K x 1(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|i_3/display0 | ram0/RAM_reg | 75 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 36     | 
++-------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance display0/ram1/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_4__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_5__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_6__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_8__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_9__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance display0/ram0/RAM_reg_1_10__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:03:26 . Memory (MB): peak = 1839.340 ; gain = 987.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:03:41 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:03:42 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:03:44 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:03:44 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:03:48 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:47 ; elapsed = 00:03:49 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     4|
+|2     |CARRY4   |  1001|
+|3     |LUT1     |   336|
+|4     |LUT2     |  1550|
+|5     |LUT3     |  2753|
+|6     |LUT4     |  3259|
+|7     |LUT5     |  3703|
+|8     |LUT6     | 12685|
+|9     |MUXF7    |   544|
+|10    |MUXF8    |   211|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    33|
+|43    |FDCE     |    16|
+|44    |FDPE     |     8|
+|45    |FDRE     |  1046|
+|46    |FDSE     |     4|
+|47    |LD       |    73|
+|48    |IBUF     |     9|
+|49    |OBUF     |    18|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:47 ; elapsed = 00:03:49 . Memory (MB): peak = 1846.523 ; gain = 994.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:03:45 . Memory (MB): peak = 1846.523 ; gain = 924.742
+Synthesis Optimization Complete : Time (s): cpu = 00:01:47 ; elapsed = 00:03:49 . Memory (MB): peak = 1846.523 ; gain = 994.738
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.436 . Memory (MB): peak = 1846.523 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1863 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1846.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 73 instances were transformed.
+  LD => LDCE: 73 instances
+
+Synth Design complete | Checksum: 4a00d473
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:04:04 . Memory (MB): peak = 1846.523 ; gain = 1375.324
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tisne/Desktop/DCL_final project_v5/Tetris/Tetris.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 28 20:58:04 2023...

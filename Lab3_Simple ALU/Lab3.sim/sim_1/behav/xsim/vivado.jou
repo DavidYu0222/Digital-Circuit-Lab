@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Mar 20 15:40:31 2025
+# Process ID: 2964
+# Current directory: C:/Users/tisne/Desktop/Vivado/Lab3_Simple ALU/Lab3.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22312 C:\Users\tisne\Desktop\Vivado\Lab3_Simple ALU\Lab3.sim\sim_1\behav\xsim\alu_test_behav.wdb
+# Log file: C:/Users/tisne/Desktop/Vivado/Lab3_Simple ALU/Lab3.sim/sim_1/behav/xsim/vivado.log
+# Journal file: C:/Users/tisne/Desktop/Vivado/Lab3_Simple ALU/Lab3.sim/sim_1/behav/xsim\vivado.jou
+# Running On: LAPTOP-4TSITKQT, OS: Windows, CPU Frequency: 3303 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\tisne\Desktop\Vivado\Lab3_Simple ALU\Lab3.sim\sim_1\behav\xsim\alu_test_behav.wdb}
+close_sim

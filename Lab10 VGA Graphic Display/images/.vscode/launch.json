@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: g++.exe 建置使用中檔案",                     // 配置名稱，將會在啟動配置的下拉選單中顯示
+            "type": "cppdbg",                                           // 配置型別，這裡只能為cppdbg
+            "request": "launch",                                        // 請求配置型別，可以為launch（啟動）或attach（附加）
+            "targetArchitecture": "x64",                                // 生成目標架構，一般為x86或x64
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe", // 將要進行除錯的程式的路徑
+            "args": [],                                                 // 程式除錯時傳遞給程式的命令列引數，一般設為空即可
+            "stopAtEntry": false,                                       // 設為true時程式將暫停在程式入口處，一般設定為false
+            "cwd": "${workspaceRoot}",                                  // 除錯程式時的工作目錄，一般為${workspaceRoot}
+            "externalConsole": false,                                    // 除錯時是否顯示控制檯視窗，一般設定為true顯示控制檯
+            "internalConsoleOptions": "neverOpen",                      // 如果不設為neverOpen，除錯時會跳到“除錯控制檯”選項卡",
+            "MIMode": "gdb",                                            // 指定連線的偵錯程式
+            "miDebuggerPath": "C:/TDM-GCC-64/bin/gdb64.exe",            // 偵錯程式路徑
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+    
+}

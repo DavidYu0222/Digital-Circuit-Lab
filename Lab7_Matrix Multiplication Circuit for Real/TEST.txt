@@ -1,0 +1,5 @@
+The matrix multiplication result is:
+[ 10E28, 0C123, 0CFD5, 18B87 ]
+[ 0AED8, 05682, 07135, 0D1E7 ]
+[ 0AAA8, 0E378, 0B5F2, 162B5 ]
+[ 10DDC, 110E6, 08AAB, 1B4A5 ]

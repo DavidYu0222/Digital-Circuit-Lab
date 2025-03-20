@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 建置使用中檔案",
+            "command": "C:\\TDM-GCC-64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",                                                  //指定編譯原始碼檔案 
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",           // 指定輸出檔名，不加該引數則預設輸出a.exe
+																																						// ========以下為 Optional 設定========
+                //"-ggdb3",                                                   // 生成和除錯有關的資訊
+                "-Wall",                                                    // 開啟所有警告
+                "-Wextra",                                                  // 開啟額外警告
+                "-static-libgcc",                                           // 靜態連結
+                "-std=c++17",                                               // 使用最新的c++17標準
+                "-Wno-format",
+                "-finput-charset=UTF-8",                                    //輸入編譯器文字編碼 預設為UTF-8
+                "-fexec-charset=GBK"                                        //編譯器輸出文字編碼 自行選擇
+																																						// ========以上為 Optional 設定========
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "偵錯工具產生的工作。編譯器: C:/TDM-GCC-64/bin/g++.exe"
+        }
+    ],
+    "version": "2.0.0"
+}

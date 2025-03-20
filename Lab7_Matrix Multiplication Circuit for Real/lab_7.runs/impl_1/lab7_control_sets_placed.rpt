@@ -1,0 +1,115 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sun Nov 19 17:58:54 2023
+| Host         : DESKTOP-JA0DJ3L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab7_control_sets_placed.rpt
+| Design       : lab7
+| Device       : xc7a35ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    37 |
+|    Minimum number of control sets                        |    37 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   162 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    37 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    26 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              49 |           20 |
+| Yes          | No                    | No                     |             562 |          160 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             303 |           98 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-----------------------------------+------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |           Enable Signal           |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-----------------------------------+------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG         | uart/tx_out_i_1_n_0               |                              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | reset_n_IBUF                      |                              |                1 |              1 |         1.00 |
+|  P_next_reg[2]_i_2_n_0 |                                   |                              |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG         |                                   | A_OR_B0                      |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG         | uart/rx_bits_remaining[3]_i_1_n_0 |                              |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG         |                                   | uart/rx_countdown[5]_i_1_n_0 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG         | counter[5]_i_1_n_0                | A_OR_B0                      |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG         |                                   | rst0                         |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG         | user_addr[0]_i_1_n_0              | A_OR_B0                      |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG         |                                   | send_counter[7]_i_1_n_0      |                6 |             11 |         1.83 |
+|  clk_IBUF_BUFG         | uart/tx_bits_remaining            |                              |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG         | result[4][17]_i_1_n_0             |                              |                4 |             18 |         4.50 |
+|  clk_IBUF_BUFG         | result[5][17]_i_1_n_0             |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[9][17]_i_1_n_0             |                              |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG         | result[14][17]_i_1_n_0            |                              |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG         | result[10][17]_i_1_n_0            |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[8][17]_i_1_n_0             |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[13][17]_i_1_n_0            |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[2][17]_i_1_n_0             |                              |                4 |             18 |         4.50 |
+|  clk_IBUF_BUFG         | result[0][17]_i_1_n_0             |                              |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG         | result[12][17]_i_1_n_0            |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[1][17]_i_1_n_0             |                              |                4 |             18 |         4.50 |
+|  clk_IBUF_BUFG         | result[15][17]_i_1_n_0            |                              |                4 |             18 |         4.50 |
+|  clk_IBUF_BUFG         | result[3][17]_i_1_n_0             |                              |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG         | result[6][17]_i_1_n_0             |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[7][17]_i_1_n_0             |                              |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG         | result[11][17]_i_1_n_0            |                              |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG         |                                   | btn_db1/clear                |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG         | i[0]_i_1_n_0                      | A_OR_B0                      |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG         | j[31]_i_2_n_0                     | A_OR_B0                      |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG         |                                   |                              |               17 |             33 |         1.94 |
+|  clk_IBUF_BUFG         | p_0_in0_out                       |                              |                6 |             48 |         8.00 |
+|  clk_IBUF_BUFG         | p_0_in0_out__0                    |                              |                6 |             48 |         8.00 |
+|  clk_IBUF_BUFG         | data[42][1]_i_2_n_0               | data[44][3]_i_1_n_0          |               32 |             63 |         1.97 |
+|  clk_IBUF_BUFG         | tmp                               |                              |               20 |             64 |         3.20 |
+|  clk_IBUF_BUFG         | data[42][1]_i_2_n_0               | data[42][1]_i_1_n_0          |               44 |            160 |         3.64 |
+|  clk_IBUF_BUFG         | data[42][1]_i_2_n_0               |                              |               69 |            193 |         2.80 |
++------------------------+-----------------------------------+------------------------------+------------------+----------------+--------------+
+
+

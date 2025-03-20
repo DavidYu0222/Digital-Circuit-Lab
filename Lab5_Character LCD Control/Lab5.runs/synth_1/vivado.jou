@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Oct 28 16:47:46 2023
+# Process ID: 19556
+# Current directory: C:/Users/tisne/Desktop/Vivado/Lab5/Lab5.runs/synth_1
+# Command line: vivado.exe -log lab5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5.tcl
+# Log file: C:/Users/tisne/Desktop/Vivado/Lab5/Lab5.runs/synth_1/lab5.vds
+# Journal file: C:/Users/tisne/Desktop/Vivado/Lab5/Lab5.runs/synth_1\vivado.jou
+# Running On: LAPTOP-4TSITKQT, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+source lab5.tcl -notrace

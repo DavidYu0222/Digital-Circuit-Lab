@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",                                 //設定名稱：選擇Win32即可，其他好像也不影響，不要改成其他的特殊識別項就好了。
+            "includePath": [                                 //包含路徑：這裡就是專門給自訂路徑的標頭檔，E.g. #include 'testlib.h'，這種非原本編譯器所提供的，讓 IntelliSense 不會隨便就跳出找不到檔案，基本上也不需要動它。
+                "${workspaceFolder}/**"
+            ],
+            "defines": [                                    //定義：這裡你也可以先 Define 一些東西，這個在有些競賽程式模板也會常常用。[入門、基礎]的不需要動它也沒關係。[進階]知道模版的用法可以直接在這裡打上你要的 Local Define。
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",    //編譯器路徑：找你的 gcc 或 g++ 在哪，這裡我會改成 g++.exe，為了整合方便就選擇 g++.exe
+            "cStandard": "gnu17",                           //C 標準 / C++ 標準：就是選擇標準版本。主流的 Online Judge 都有支援 C++ 11/14/17，就直接選 gnu++ 後面所對應的版本即可。
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"           //IntelliSense模式：要選好，系統才知道你要套用什麼樣的Code Auto-Completion，也要跟剛剛上述所說的設定相符
+                                                            //(Windows 系統，g++ 編譯器，64 位元)
+        }
+    ],
+    "version": 4
+}
